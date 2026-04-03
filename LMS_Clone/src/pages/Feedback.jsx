@@ -60,7 +60,7 @@ const Feedback = () => {
       <Navbar />
 
       <div className="flex flex-wrap justify-around items-center gap-4 mb-10">
-        <h1 className="text-3xl font-semibold">Feedback</h1>
+        <h1 className="text-3xl font-bold">Feedback</h1>
         <button
           onClick={openModal}
           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-sm font-medium"
