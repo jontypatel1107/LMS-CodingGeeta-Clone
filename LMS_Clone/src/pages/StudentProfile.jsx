@@ -83,16 +83,16 @@ const StudentProfile = () => {
         {/* CONTACT */}
         <Section title="Contact & Links">
           <Field label="Mobile" value={user.mobile} highlight />
-          <Field label="Parent Mobile" value="—" />
+          <Field label="Parent Mobile" value="7202923867" />
           <FieldLink label="University Email" value={user.email} />
           <FieldLink label="Current Email" value={user.email} />
           <Field label="Address" value="Kalol, Gandhinagar" highlight />
           <Field label="Portfolio" value="—" />
           <Field label="Resume" value="—" />
-          <FieldLink label="Github" value="https://github.com" />
-          <FieldLink label="LinkedIn" value="https://linkedin.com" />
-          <FieldLink label="Twitter" value="https://x.com" />
-          <FieldLink label="YouTube" value="https://youtube.com" />
+          <FieldLink label="Github" value="https://github.com/jontypatel1107" />
+          <FieldLink label="LinkedIn" value="https://www.linkedin.com/in/jonty-patel-b40731394/" />
+          <FieldLink label="Twitter" value="https://x.com/JontyPatel1107" />
+          <FieldLink label="YouTube" value="https://www.youtube.com/@JontyPatel-1107" />
         </Section>
 
         {/* ACADEMICS */}
