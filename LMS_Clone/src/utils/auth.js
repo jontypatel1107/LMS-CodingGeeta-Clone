@@ -65,7 +65,24 @@ export const loginDetails = (uid, password) => {
 
   if (!student) return false;
 
-  localStorage.setItem("user", JSON.stringify(student));
+  // Check if user data already exists in localStorage
+  const existingUserData = localStorage.getItem("user");
+  let userData = student;
+
+  if (existingUserData) {
+    try {
+      const parsedExistingData = JSON.parse(existingUserData);
+      // If the existing user has the same UID, preserve additional data like leaveRequests
+      if (parsedExistingData.uid === student.uid) {
+        userData = { ...student, ...parsedExistingData };
+      }
+    } catch (error) {
+      // If parsing fails, use the default student data
+      console.warn("Failed to parse existing user data:", error);
+    }
+  }
+
+  localStorage.setItem("user", JSON.stringify(userData));
 
   return true;
 };
